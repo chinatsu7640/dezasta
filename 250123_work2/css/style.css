@@ -1,0 +1,14 @@
+@charset "utf-8" ;
+div{
+    max-width: 767px;
+    margin: 20px;
+}
+
+li{
+    list-style: none;
+    border-bottom: 1px solid #444;
+}
+
+li{
+    padding: 20px 0px;
+}

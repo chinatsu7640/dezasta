@@ -17,7 +17,11 @@ header{
 
 li+ li {
     border-left: 1px solid #333;
-    padding: 10px 30px;
     
+}
+
+li{
+    padding: 10px 30px;
+
 }
   
