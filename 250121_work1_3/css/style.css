@@ -24,4 +24,24 @@ li{
     padding: 10px 30px;
 
 }
+
+@media screen and (max-width: 767px) {
+    header{
+        flex-direction: column;
+        
+        
+    }
+    .menu{
+        flex-direction: column;
+        
+    }
+    
+    li{
+        border-bottom: 1px solid #333;
+        
+        
+    }
+}
+
+
   
