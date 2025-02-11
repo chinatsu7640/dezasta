@@ -1,0 +1,180 @@
+@charset "utf-8" ;
+
+
+body{
+    background-color: #e8d9bf;   
+}
+
+header{
+    position: relative;
+}
+
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7% 0 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_logo {
+    width: 226px;
+}
+
+.pc_nav ul{
+    display: flex;
+    gap: 54px
+}
+
+.pc_nav ul li{
+    width: 106px;
+    text-align: center;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+ font-weight: bold;
+ color: #fff;
+ font-size: 18px;   
+}
+
+.aboutus_menu_box{
+    width: 1000px;
+}
+
+.concept{
+    text-align: center;
+}
+
+.honbun1{
+    margin: 104px 0px 47px 0px;
+    font-size: 30px
+}
+
+.midashi1{
+    line-height: 1.17;
+    font-size: 82px;
+}
+
+.honbun2{
+    font-size: 23px;
+    margin:50px 0px 92px 0px;
+    line-height: 1.65;
+}
+
+.aboutus{
+    display: flex;
+    justify-content: center;
+}
+
+.coffee{
+    border-radius: 0px 0px 82px 0px;
+}
+
+.aboutus_logo{
+    width: 272px;
+    margin: 56px 0px 48px 75px;
+}
+
+.midashi2{
+    font-size: 44px;
+    margin: 0px 0px 0px 80px
+}
+
+.honbun3{
+    font-size: 16px;
+    width: 410px;
+    margin: 23px 0px 0px 88px;
+
+}
+
+.menu_logo{
+    width: 151px;
+    margin: 95px 0px 39px 0px;
+    text-align: center;
+}
+
+.menu_box{
+    display: flex;
+    justify-content: center;
+
+}
+
+.honbun4{
+    width: 300px;
+    margin: 23px 0px 0px 0px;
+}
+
+.category{
+    color: #d30202;
+    font-size: 38px;
+    margin: -12px 0px 0px 11px;
+}
+
+.category_box{
+   
+    padding: 78px 49px 0px 0px; 
+    box-sizing: border-box;
+   
+}
+
+.Drink{
+    border-radius: 0px 41px 0px 0px;
+}
+.Food{
+    border-radius: 0px 41px 0px 0px;
+}
+.Sweets{
+    border-radius: 0px 41px 0px 0px;
+}
+
+.gallery_logo{
+    width: 245px;
+    text-align: center;
+    margin: 90px 0px 26px 0px; 
+
+}
+
+.gallery_photo{
+    display: flex;
+    justify-content: center;
+}
+
+.event_logo{
+    width: 173px;
+    text-align: center;
+}
+
+.event_schedule{
+    display: flex;
+    justify-content: center;
+}
+.event_box{
+    width: 1000px;
+    height: 200px;
+    border: solid #4f260b;
+    font-size: 23px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 39px 174px 46px;
+}
+
+
+
+.access_logo{
+    width: 213px;
+    margin: 68px 0px 34px 0px;
+}
+
+.detail{
+    text-decoration: underline;
+    text-decoration-color: #4f260b;
+}
+
+iframe{
+    width: 1920px;
+    height: 471px;
+    display: block;
+}
