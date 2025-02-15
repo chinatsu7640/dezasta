@@ -45,13 +45,18 @@ header{
     margin: 0 auto;
 }
 
+.aboutus_menu_box
+div{
+    width: 41%;
+}
+
 .concept{
     text-align: center;
 }
 
 .honbun1{
-    margin: 104px 0px 47px 0px;
-    font-size: 30px
+    font-size: 30px;
+    margin: 104px 0 47px;
 }
 
 .midashi1{
@@ -65,29 +70,31 @@ header{
     line-height: 1.65;
 }
 
-.aboutus{
+#aboutus{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .coffee{
     border-radius: 0px 0px 82px 0px;
+    width: 50%;
 }
 
 .aboutus_logo{
     width: 272px;
-    margin: 56px 0px 48px 75px;
+    margin: 0px 0px 48px 0;
 }
 
 .midashi2{
     font-size: 44px;
-    margin: 0px 0px 0px 80px
+    line-height: 1.38;
 }
 
 .honbun3{
     font-size: 16px;
-    width: 410px;
-    margin: 23px 0px 0px 88px;
+    margin: 23px 0px 0px 0;
+    line-height: 1.62;
 
 }
 
@@ -99,37 +106,38 @@ header{
 
 .menu_box{
     display: flex;
-    justify-content: center;
+    gap: 10px;
+    justify-content: space-between;
 
 }
 
-.honbun4{
-    width: 300px;
-    margin: 23px 0px 0px 0px;
-}
-
-.category{
+.menu_box
+h3{
     color: #d30202;
     font-size: 38px;
     margin: -12px 0px 0px 11px;
 }
 
-.category_box{
-   
-    padding: 78px 49px 0px 0px; 
+
+.menu_box
+p{
+    margin: 23px 0px 0px 0px;
+    line-height: 1.47;
+}
+
+
+.menu_box
+li{
     box-sizing: border-box;
+    width: 33%;
    
 }
 
-.Drink{
+.menu_box
+img{
     border-radius: 0px 41px 0px 0px;
 }
-.Food{
-    border-radius: 0px 41px 0px 0px;
-}
-.Sweets{
-    border-radius: 0px 41px 0px 0px;
-}
+
 
 .gallery_logo{
     width: 245px;
@@ -149,25 +157,34 @@ header{
     display: block;
 }
 
-.event_schedule{
-    display: flex;
-    justify-content: center;
-}
 .event_box{
-    width: 1000px;
-    height: 200px;
+    max-width: 1000px;
     border: solid #4f260b;
     font-size: 23px;
     background-color: #ffffff;
     margin: 0 auto;
-    padding: 40px 174px 40px;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+
 }
 
+.event_box2{
+    display: inline-block;
+}
+
+.event_schedule{
+    display: flex;
+    gap: 54px;
+}
 .detail{
     text-decoration: underline;
     text-decoration-color: #4f260b;
 }
-
+.event_box
+li{
+     line-height: 1.96;
+}
 
 .access_logo{
     width: 213px;
@@ -190,24 +207,28 @@ footer{
 }
 
 .footer{
+    max-width: 1000px;
+    padding:50px 43% 75px 24% ;
+    width: 63%;
+}
+
+.footer2{
     display: flex;
-    justify-content: center;
+    gap: 65px;
 }
 
 .designcafe_logo{
     width: 227px;
     height: 50px;
-    margin: 75px 65px 0px 0px;
 }
-.address{
+.footer2
+p{
     font-size: 20px;
-    margin: 82px 0px 74px 0px;
     line-height: 1.95;
 
 }
 
 .copyright{
-    margin: 0px 0px 74px 0px;
     text-align: center;
 }
 
