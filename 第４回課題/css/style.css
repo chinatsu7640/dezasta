@@ -41,6 +41,90 @@ header{
  font-size: 18px;   
 }
 
+.sp_nav,
+.sp_btn{
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .pc_nav{
+        display: none;
+    }
+    .sp_btn{
+        display: block;
+        height: 23px;
+        cursor: pointer;
+        position: absolute;
+        right: 24px;
+        z-index: 2;
+    }
+    .sp_btn span{
+        display: block;
+        width: 33px;
+        height:3px;
+        background-color: #fff;
+        border-radius: 2px;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content:'';
+        display: block;
+        width: 33px;
+        height:3px;
+        background-color: #fff;
+        border-radius: 2px;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .sp_btn span::before{
+        bottom: 10px;
+    }
+    .sp_btn span::after{
+        top: 10px;
+    }
+    .sp_btn.open span{
+        background-color: transparent;
+    }
+    .sp_btn.open span::before{
+        bottom:0;
+        transform: rotate(45deg);
+    }
+        .sp_btn.open span::after{
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+        .sp_nav{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,0.8);
+            z-index: 1;
+        }
+        .sp_nav ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap: 40px;
+        }
+        .sp_nav ul li{
+            color: #fff;
+            font-size: 40px;
+            font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+        }
+       
+    
+    }
+
+
 .aboutus_menu_box{
     max-width: 1000px;
     margin: 0 auto;
@@ -73,6 +157,9 @@ div{
     line-height: 1.65;
     letter-spacing:  0.1em;
 }
+.honbun2 br{
+    display: none;
+}
 
 #aboutus{
     display: flex;
@@ -101,6 +188,77 @@ div{
     line-height: 1.62;
 
 }
+
+
+@media screen and (max-width: 375px) {
+    .honbun1{
+        font-size: 17px;
+        padding: 41px 0 22px;
+        margin: 0 auto;
+        
+    }
+
+    
+    .midashi1{
+        font-size: 38px;
+        letter-spacing: 0.02em;
+        line-height: 1.15;
+        padding: 35p
+    }
+    .midashi1 br{
+        display: none;
+    }
+
+
+
+    .honbun2{
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        line-height: 1.88;
+        margin: 12px 0 54px;
+    }
+    .honbun2 br{
+        display: block;
+    }
+
+     #aboutus{
+    display: grid;
+    }
+
+    #aboutus div{
+    display: contents;
+    }
+   .coffee{
+    order: 2;
+    border-radius: 0px ;
+    width: 100%;
+    }
+    .aboutus_logo{
+    order: 1;
+    width: 160px;
+    display: block;
+    margin: 53px 0 12px;
+
+   
+    }
+    .midashi2{
+    order: 3;
+    font-size: 36px;
+    max-width: 335px;
+    padding: 35px 0 18px ;
+    } 
+
+   .honbun3{
+    order: 4;
+    font-size: 16px;
+    max-width: 335px;
+    line-height: 1.75;
+    margin: 0 auto;
+    }
+
+}
+
+
 
 .menu_logo{
     width: 151px;
@@ -246,4 +404,13 @@ p{
     position: fixed;
     bottom: 40px;
     right: 40px;
+}
+
+.slick-dots{
+    bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
 }
