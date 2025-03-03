@@ -177,6 +177,10 @@ div{
     margin: 0px 0px 48px 0;
 }
 
+h2{
+    width: 100%;
+}
+
 .midashi2{
     font-size: 44px;
     line-height: 1.38;
@@ -190,7 +194,7 @@ div{
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1100px) {
     .honbun1{
         font-size: 17px;
         padding: 41px 0 22px;
@@ -205,10 +209,6 @@ div{
         line-height: 1.15;
         padding: 35p
     }
-    .midashi1 br{
-        display: none;
-    }
-
 
 
     .honbun2{
@@ -222,83 +222,110 @@ div{
     }
 
      #aboutus{
-    display: grid;
+    flex-direction: column;
+    align-items: flex-start;
     }
 
     #aboutus div{
     display: contents;
     }
+
    .coffee{
     order: 2;
     border-radius: 0px ;
     width: 100%;
+    text-align: center;
     }
+    
     .aboutus_logo{
     order: 1;
     width: 160px;
     display: block;
-    margin: 53px 0 12px;
-
-   
+    margin: 0 auto 12px ; 
     }
     .midashi2{
     order: 3;
     font-size: 36px;
     max-width: 335px;
-    padding: 35px 0 18px ;
+    padding: 35px 20px 18px ;
+    align-items: flex-start;
     } 
 
    .honbun3{
     order: 4;
     font-size: 16px;
-    max-width: 335px;
     line-height: 1.75;
+    padding: 0 20px ;
     margin: 0 auto;
     }
-
-}
-
+    .aboutus_menu_box{
+        padding: 0 0 0 0;
+     }
+ }
 
 
 .menu_logo{
     width: 151px;
     margin: 95px auto 39px ;
     display: block;
-}
+    }
 
-.menu_box{
+ .menu_box{
     display: flex;
     gap: 10px;
     justify-content: space-between;
 
-}
+    }
 
 .menu_box
-h3{
+   h3{
     color: #d30202;
     font-size: 38px;
     margin: -12px 0px 0px 11px;
-}
+     }
 
 
 .menu_box
-p{
+   p{
     margin: 23px 0px 0px 0px;
     line-height: 1.47;
-}
+    }
 
 
 .menu_box
-li{
+    li{
     box-sizing: border-box;
     width: 30%;
    
-}
+    }
 
 .menu_box
-img{
+   img{
     border-radius: 0px 41px 0px 0px;
     width: 100%;
+    }
+
+
+@media screen and (max-width:767px) {
+
+    .menu_logo{
+        width: 87px;
+        margin: 51px auto 17px ;
+    }
+    .menu_box{
+        flex-direction: column;
+    }
+    
+    .menu_box
+    li {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .menu_box
+   p{
+    margin: 16px 0px 56px 0px;
+    line-height: 1.58;
+    }
 }
 
 
@@ -307,24 +334,36 @@ img{
     display: block;
     margin: 90px auto 26px ; 
 
-}
-
+    }
+ 
 .gallery_photo{
     display: flex;
     justify-content: center;
-}
+    }
+
+@media screen and (max-width:767px) {
+
+    .gallery_logo{
+        width: 142px;
+        margin: 0 auto 15px;
+    }
+
+    .gallery_photo{
+        width: 100%;
+    }
+}    
 
 .event_logo{
     width: 173px;
     margin: 59px auto 30px;
     display: block;
-}
+    }
 
-#event{
+ #event{
     padding: 0 10px;
-}
+    }
 
-.event_box{
+ .event_box{
     max-width: 1000px;
     border: solid #4f260b;
     font-size: 23px;
@@ -334,37 +373,37 @@ img{
     display: flex;
     justify-content: center;
 
-}
+    }
 
-.event_box2{
+    .event_box2{
     display: inline-block;
-}
+    }
 
-.event_schedule{
+    .event_schedule{
     display: flex;
     gap: 54px;
-}
-.detail{
+    }
+   .detail{
     text-decoration: underline;
     text-decoration-color: #4f260b;
-}
-.event_box
-li{
+     }
+ .event_box
+    li{
      line-height: 1.96;
-}
+    }
 
 .access_logo{
     width: 213px;
     margin: 68px auto 34px;
     display: block;
-}
+    }
 
 
-iframe{
+ iframe{
     width: 100%;
     height: 471px;
     display: block;
-}
+    } 
 
 footer{
     width: 100%;
@@ -413,4 +452,5 @@ p{
 .slick-dots li.slick-active button:before,
 .slick-dots li button:before {
     color: #fff;
+
 }
