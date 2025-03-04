@@ -42,6 +42,7 @@
                     <li><a href="#gallery">GALLERY</a></li>
                     <li><a href="#event">EVENT</a></li>
                     <li><a href="#access">ACCESS</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
             <div class="sp_btn">
@@ -134,6 +135,7 @@
                 <li><img src="./images/pc_gallary_03-100.jpg" alt=""></li>
                 <li><img src="./images/pc_gallary_02-100.jpg" alt=""></li>
                 <li><img src="./images/pc_gallary_01-100.jpg" alt=""></li>
+                <li><img src="./images/pc_gallary_01-100.jpg" alt=""></li>
             </ul>
         </section>
 
@@ -211,17 +213,23 @@
                 arrows: false,
             });
 
-            if (window.matchMedia('(max-width: 767px)').matches) {
+            $('.gallery_photo').slick({
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
 
-                $('.gallery_photo').slick({
 
-
-                });
-            }
-
-
-
+            });
         })
+
 
     </script>
 </body>
