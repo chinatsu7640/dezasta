@@ -407,14 +407,14 @@ h2{
 
         .event_box{
             width: 90%;
+            height: 200px;
+            
         }
-
+        
         .event_box2{
             font-size: 16px;
             width: 70%;
-            overflow: hidden; 
-            text-overflow: ellipsis; 
-            white-space: nowrap;
+            
             
         }
         
@@ -422,10 +422,20 @@ h2{
             flex-direction: column;
             display: block;
         }
-
+        
+        .event_schedule
+        li{
+            overflow: hidden; 
+            text-overflow: ellipsis; 
+            white-space: nowrap;
+            line-height: 1;
+            
+        }
         .detail{
             padding-top: 4px  ;
+            padding-bottom: 30px;
         }
+    
 
 
     }
@@ -497,12 +507,42 @@ p{
 }
 
 @media screen and (max-width:767px){
+    footer{
+        height:321px;
+        
+    }
+
+    .footer{
+        padding: 0;
+    }
+
     .footer2{
         flex-direction: column;
+        display: block;
     }
 
     .designcafe_logo{
-        margin: 41px;
+        padding: 41px 35% 36px 5% ;
+    }
+
+    .footer2
+    p{
+        font-size: 18px;
+        padding-top: 0;
+        padding-left: 5%;
+        padding-bottom: 40px;
+        line-height: 1.72;
+    }
+
+    .copyright{
+        padding-bottom: 33px;
+    }
+
+    .pagetop{
+        width: 100px;
+        position: fixed;
+        bottom: 205px;
+        right: 11px;
     }
 }
 
